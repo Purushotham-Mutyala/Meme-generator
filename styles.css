@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  .styled-input {
+    margin: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .styled-input:focus {
+    outline: none;
+    border-color: #feb47b;
+  }
+  
+  .styled-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .styled-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    transition: left 0.5s;
+    z-index: -1;
+  }
+  
+  .styled-button:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+  }
+  
+  .styled-button:hover::after {
+    left: 0;
+  }
+  
+  #memeCanvas {
+    margin-top: 20px;
+    border: 6px solid;
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #memeCanvas:hover {
+    border-image: linear-gradient(to right, #1e3c72, #2a5298) 1;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  

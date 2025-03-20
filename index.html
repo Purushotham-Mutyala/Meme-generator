@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Meme Generator</h1>
+    <p>Create and customize your memes with fun features!</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <button id="themeToggle" class="styled-button">Switch Theme</button>
+    <div class="upload-section">
+      <input type="file" id="imageInput" accept="image/*" class="styled-input">
+    </div>
+    <input type="text" id="topText" placeholder="Top Text" class="styled-input">
+    <input type="text" id="bottomText" placeholder="Bottom Text" class="styled-input">
+    <button id="downloadBtn" class="styled-button">Download Meme</button>
+    <canvas id="memeCanvas"></canvas>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Meme Generator Inc. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
